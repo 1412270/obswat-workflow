@@ -33,10 +33,10 @@ type ExecutionStep = {
 
 const nodeVisuals: Record<NodeType, { color: string; Icon: typeof PlayCircleFilledIcon }> =
   {
-    start: { color: '#10b981', Icon: PlayCircleFilledIcon },
-    function: { color: '#3b82f6', Icon: FunctionsIcon },
-    condition: { color: '#f59e0b', Icon: HelpOutlineIcon },
-    end: { color: '#ef4444', Icon: StopCircleIcon },
+    start: { color: '#00a7b8', Icon: PlayCircleFilledIcon },
+    function: { color: '#1f5ea8', Icon: FunctionsIcon },
+    condition: { color: '#f4b740', Icon: HelpOutlineIcon },
+    end: { color: '#e15050', Icon: StopCircleIcon },
   }
 
 function WorkflowApp() {
@@ -181,7 +181,7 @@ function WorkflowApp() {
   }, [executionSteps, isRunModalOpen, runError])
 
   return (
-    <Box display="flex" height="100vh" width="100vw" bgcolor="#f3f4f6">
+    <Box display="flex" height="100vh" width="100vw" bgcolor="background.default">
       <ComponentsSidebar onRunWorkflow={runWorkflow} />
 
       <WorkflowCanvas
