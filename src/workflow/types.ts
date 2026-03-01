@@ -7,6 +7,7 @@ export type WorkflowNodeData = {
     type: NodeType
     functionBody?: string
     conditionExpression?: string
+    onDelete?: () => void
 }
 
 export type WorkflowNode = Node<WorkflowNodeData>
